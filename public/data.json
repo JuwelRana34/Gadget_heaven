@@ -1,0 +1,497 @@
+[
+  {
+    "product_id": "C001",
+    "product_title": "Gaming Laptop Pro X",
+    "product_image": "https://www.startech.com.bd/image/cache/catalog/laptop/lenovo/ideapad-gaming-3/ideapad-gaming-3-001-228x228.jpg",
+    "category": "Computers",
+    "price": 1499.99,
+    "description": "High-performance gaming laptop with a powerful GPU and fast display for gaming enthusiasts.",
+    "Specification": [
+        "Intel Core i9",
+        "32GB RAM",
+        "1TB SSD",
+        "NVIDIA RTX 3080",
+        "15.6-inch 144Hz display"
+    ],
+    "availability": true,
+    "rating": 4.8,
+    "warranty": "2 years"
+},
+{
+    "product_id": "C002",
+    "product_title": "Ultrabook Light 13",
+    "product_image": "https://www.startech.com.bd/image/cache/catalog/laptop/acer/swift-go-14-sfg14-41-r3fa/swift-go-14-sfg14-41-r3fa-01-228x228.webp",
+    "category": "Computers",
+    "price": 1099.99,
+    "description": "A sleek, lightweight ultrabook ideal for on-the-go professionals.",
+    "Specification": [
+        "Intel Core i7",
+        "16GB RAM",
+        "512GB SSD",
+        "Integrated Graphics",
+        "13.3-inch Retina display"
+    ],
+    "availability": true,
+    "rating": 4.5,
+    "battery_life": "Up to 14 hours"
+},
+{
+    "product_id": "C003",
+    "product_title": "Workstation Z Pro",
+    "product_image": "https://www.startech.com.bd/image/cache/catalog/laptop/lenovo/yoga-6-13abr8/yoga-6-13abr8-001-228x228.webp",
+    "category": "Computers",
+    "price": 2299.99,
+    "description": "A powerful workstation built for handling complex tasks and software applications.",
+    "Specification": [
+        "AMD Ryzen 9",
+        "64GB RAM",
+        "2TB SSD",
+        "NVIDIA Quadro RTX 5000",
+        "17.3-inch 4K display"
+    ],
+    "availability": false,
+    "rating": 4.7,
+    "weight": "2.5kg"
+},
+{
+    "product_id": "C004",
+    "product_title": "Budget Laptop A1",
+    "product_image": "https://www.globalbrand.com.bd/image/cache/catalog/LAPTOP/ASUS/X1404VA-NK480W-1-600x600.jpg",
+    "category": "Computers",
+    "price": 499.99,
+    "description": "An affordable laptop for everyday tasks like browsing, email, and document editing.",
+    "Specification": [
+        "Intel Core i3",
+        "8GB RAM",
+        "256GB SSD",
+        "Integrated Graphics",
+        "14-inch HD display"
+    ],
+    "availability": true,
+    "rating": 4.2,
+    "color": "Silver"
+},
+{
+    "product_id": "C005",
+    "product_title": "Convertible Laptop Flex 2",
+    "product_image": "https://m.media-amazon.com/images/I/71aHksGNAsL._AC_SY355_.jpg",
+    "category": "Computers",
+    "price": 799.99,
+    "description": "A 2-in-1 laptop that can be used as a tablet with touch and stylus support.",
+    "Specification": [
+        "Intel Core i5",
+        "8GB RAM",
+        "512GB SSD",
+        "Intel Iris Plus Graphics",
+        "14-inch Full HD touch display"
+    ],
+    "availability": true,
+    "rating": 4.6,
+    "mode": "Laptop & Tablet"
+},
+{
+  "product_id": "P001",
+  "product_title": "Smartphone X Pro",
+  "product_image": "https://asia-exstatic-vivofs.vivo.com/PSee2l50xoirPK7y/1672109987554/ff548482dab68707347f8861fa0bf387.png",
+  "category": "Phones",
+  "price": 999.99,
+  "description": "A high-end smartphone with a powerful processor and advanced camera system.",
+  "Specification": [
+      "6.7-inch OLED display",
+      "256GB Storage",
+      "48MP Triple Camera",
+      "4500mAh battery",
+      "5G support"
+  ],
+  "availability": true,
+  "rating": 4.9,
+  "color": "Midnight Black"
+},
+{
+  "product_id": "P002",
+  "product_title": "Smartphone Lite S",
+  "product_image": "https://fdn.gsmarena.com/imgroot/news/21/12/samsung-galaxy-s10-series-android-12-one-ui-4-beta/-184x111/gsmarena_001.jpg",
+  "category": "Phones",
+  "price": 499.99,
+  "description": "A budget-friendly smartphone with essential features for everyday use.",
+  "Specification": [
+      "6.2-inch LCD display",
+      "64GB Storage",
+      "13MP Dual Camera",
+      "3000mAh battery",
+      "4G support"
+  ],
+  "availability": true,
+  "rating": 4.3,
+  "color": "Ocean Blue"
+},
+{
+  "product_id": "P003",
+  "product_title": "Smartphone Ultra Z",
+  "product_image": "https://www.excelestore.com.bd/public/uploads/all/OH90pPNk4n1LKJtO4S89Fbx6Nz2XqN1UviKdKtkq.webp",
+  "category": "Phones",
+  "price": 1299.99,
+  "description": "A premium smartphone with a stunning display and cutting-edge features.",
+  "Specification": [
+      "6.9-inch AMOLED display",
+      "512GB Storage",
+      "108MP Quad Camera",
+      "5000mAh battery",
+      "5G support"
+  ],
+  "availability": true,
+  "rating": 4.8,
+  "water_resistance": "IP68"
+},
+{
+  "product_id": "P004",
+  "product_title": "Smartphone Mini",
+  "product_image": "https://s.alicdn.com/@sc04/kf/H6b29fd4f3da643fdbb1a530f3a2f0a97d.jpg_720x720q50.jpg",
+  "category": "Phones",
+  "price": 399.99,
+  "description": "Compact smartphone that fits comfortably in one hand without compromising on features.",
+  "Specification": [
+      "5.8-inch OLED display",
+      "128GB Storage",
+      "12MP Dual Camera",
+      "2500mAh battery",
+      "4G support"
+  ],
+  "availability": true,
+  "rating": 4.2,
+  "weight": "150g"
+},
+{
+  "product_id": "P005",
+  "product_title": "Smartphone Max Plus",
+  "product_image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPzjHOKwcC2RTKuTxUlha2FUjG2ytjBf1fwg&s",
+  "category": "Phones",
+  "price": 899.99,
+  "description": "A large-screen smartphone with fast processing and ample storage.",
+  "Specification": [
+      "6.8-inch LCD display",
+      "256GB Storage",
+      "48MP Triple Camera",
+      "4500mAh battery",
+      "5G support"
+  ],
+  "availability": true,
+  "rating": 4.6,
+  "charging_speed": "33W Fast Charging"
+},
+{
+  "product_id": "P006",
+  "product_title": "Smartphone Eco",
+  "product_image": "https://static1.pocketlintimages.com/wordpress/wp-content/uploads/2023/10/samsung-galaxy-s22-ultra.jpg?q=50&fit=contain&w=480&h=480&dpr=1.5",
+  "category": "Phones",
+  "price": 299.99,
+  "description": "Eco-friendly smartphone made from sustainable materials.",
+  "Specification": [
+      "6.1-inch IPS display",
+      "64GB Storage",
+      "12MP Rear Camera",
+      "3500mAh battery",
+      "4G support"
+  ],
+  "availability": false,
+  "rating": 4.4,
+  "recycled_material_percentage": "80%"
+},
+{
+  "product_id": "P007",
+  "product_title": "Smartphone Fold",
+  "product_image": "https://www.cnet.com/a/img/resize/9cd3b476167aa5de5ee570bc1b7f969924090eb0/hub/2023/06/20/1529a458-84f8-4c2b-8add-b9ac288b2bcd/new-razr-plus-12.jpg?auto=webp&fit=crop&height=144&width=144",
+  "category": "Phones",
+  "price": 1599.99,
+  "description": "A foldable smartphone offering versatility and a unique design.",
+  "Specification": [
+      "7.6-inch foldable OLED display",
+      "512GB Storage",
+      "50MP Triple Camera",
+      "4400mAh battery",
+      "5G support"
+  ],
+  "availability": true,
+  "rating": 4.7,
+  "foldable": true
+},
+{
+  "product_id": "IP001",
+  "product_title": "iPhone 15 Pro",
+  "product_image": "https://example.com/images/iphone_15_pro.jpg",
+  "category": "Phones",
+  "price": 1199.99,
+  "description": "The latest iPhone with an advanced A17 Bionic chip and stunning ProMotion display.",
+  "Specification": [
+      "6.1-inch Super Retina XDR display",
+      "256GB Storage",
+      "48MP Triple Camera",
+      "4000mAh battery",
+      "5G support",
+      "Ceramic Shield front"
+  ],
+  "availability": true,
+  "rating": 4.9,
+  "color_options": ["Silver", "Graphite", "Gold", "Pacific Blue"]
+},
+{
+  "product_id": "IP002",
+  "product_title": "iPhone 14",
+  "product_image": "https://example.com/images/iphone_14.jpg",
+  "category": "Phones",
+  "price": 799.99,
+  "description": "A powerful iPhone with great performance and camera features.",
+  "Specification": [
+      "6.1-inch Liquid Retina display",
+      "128GB Storage",
+      "12MP Dual Camera",
+      "3279mAh battery",
+      "5G support",
+      "A15 Bionic chip"
+  ],
+  "availability": true,
+  "rating": 4.7,
+  "water_resistance": "IP68"
+},
+{
+  "product_id": "IP003",
+  "product_title": "iPhone SE (2022)",
+  "product_image": "https://example.com/images/iphone_se_2022.jpg",
+  "category": "Phones",
+  "price": 429.99,
+  "description": "Compact iPhone with powerful performance and an affordable price.",
+  "Specification": [
+      "4.7-inch Retina HD display",
+      "64GB Storage",
+      "12MP Rear Camera",
+      "2018mAh battery",
+      "4G and 5G support",
+      "A15 Bionic chip"
+  ],
+  "availability": true,
+  "rating": 4.5,
+  "touch_id": true
+},
+{
+  "product_id": "MB001",
+  "product_title": "MacBook Air 13 M2",
+  "product_image": "https://example.com/images/macbook_air_13_m2.jpg",
+  "category": "Computers",
+  "price": 1199.99,
+  "description": "Lightweight and powerful, with the latest M2 chip for incredible performance.",
+  "Specification": [
+      "13.3-inch Retina display",
+      "Apple M2 chip",
+      "8GB RAM",
+      "256GB SSD",
+      "Integrated 8-core GPU"
+  ],
+  "availability": true,
+  "rating": 4.8,
+  "weight": "2.7 lbs",
+  "color_options": ["Space Gray", "Silver", "Gold"]
+},
+{
+  "product_id": "MB002",
+  "product_title": "MacBook Pro 14 M1 Pro",
+  "product_image": "https://example.com/images/macbook_pro_14_m1pro.jpg",
+  "category": "Computers",
+  "price": 1999.99,
+  "description": "High-performance MacBook Pro with M1 Pro chip, ideal for professionals.",
+  "Specification": [
+      "14.2-inch Liquid Retina XDR display",
+      "Apple M1 Pro chip",
+      "16GB RAM",
+      "512GB SSD",
+      "Integrated 14-core GPU"
+  ],
+  "availability": true,
+  "rating": 4.9,
+  "battery_life": "Up to 17 hours"
+},
+{
+  "product_id": "MB003",
+  "product_title": "MacBook Pro 16 M1 Max",
+  "product_image": "https://example.com/images/macbook_pro_16_m1max.jpg",
+  "category": "Computers",
+  "price": 3499.99,
+  "description": "Powerful MacBook Pro with M1 Max chip for ultimate performance and graphics.",
+  "Specification": [
+      "16.2-inch Liquid Retina XDR display",
+      "Apple M1 Max chip",
+      "32GB RAM",
+      "1TB SSD",
+      "Integrated 32-core GPU"
+  ],
+  "availability": false,
+  "rating": 4.9,
+  "weight": "4.3 lbs",
+  "color": "Space Gray"
+},
+{
+  "product_id": "MB004",
+  "product_title": "MacBook Air 15 M2",
+  "product_image": "https://example.com/images/macbook_air_15_m2.jpg",
+  "category": "Computers",
+  "price": 1299.99,
+  "description": "MacBook Air with a larger display and ultra-thin design, powered by M2 chip.",
+  "Specification": [
+      "15.6-inch Retina display",
+      "Apple M2 chip",
+      "8GB RAM",
+      "512GB SSD",
+      "Integrated 10-core GPU"
+  ],
+  "availability": true,
+  "rating": 4.7,
+  "port_options": ["2 x Thunderbolt", "MagSafe charging"]
+},
+{
+  "product_id": "MB005",
+  "product_title": "MacBook Pro 13 M2",
+  "product_image": "https://example.com/images/macbook_pro_13_m2.jpg",
+  "category": "Computers",
+  "price": 1299.99,
+  "description": "Compact MacBook Pro with M2 chip, delivering strong performance in a portable size.",
+  "Specification": [
+      "13.3-inch Retina display",
+      "Apple M2 chip",
+      "8GB RAM",
+      "256GB SSD",
+      "Integrated 10-core GPU"
+  ],
+  "availability": true,
+  "rating": 4.6,
+  "touch_bar": true
+},
+{
+  "product_id": "AC001",
+  "product_title": "Apple MagSafe Charger",
+  "product_image": "https://example.com/images/magsafe_charger.jpg",
+  "category": "Accessories",
+  "price": 39.99,
+  "description": "Effortless wireless charging with MagSafe compatibility for iPhone models.",
+  "Specification": [
+      "15W charging speed",
+      "Compatible with iPhone 12 and newer",
+      "Magnetic alignment for easy attachment",
+      "USB-C connector"
+  ],
+  "availability": true,
+  "rating": 4.7,
+  "compatibility": ["iPhone 12", "iPhone 13", "iPhone 14"]
+},
+{
+  "product_id": "AC002",
+  "product_title": "Apple AirPods Pro (2nd Generation)",
+  "product_image": "https://example.com/images/airpods_pro_2.jpg",
+  "category": "Accessories",
+  "price": 249.99,
+  "description": "High-quality wireless earbuds with noise cancellation and spatial audio.",
+  "Specification": [
+      "Active Noise Cancellation",
+      "Transparency mode",
+      "Up to 6 hours of listening time",
+      "Sweat and water resistance"
+  ],
+  "availability": true,
+  "rating": 4.8,
+  "battery_life": "Up to 30 hours with charging case",
+  "color": "White"
+},
+{
+  "product_id": "AC003",
+  "product_title": "Apple USB-C to Lightning Cable (1 m)",
+  "product_image": "https://example.com/images/usbc_to_lightning_cable.jpg",
+  "category": "Accessories",
+  "price": 19.99,
+  "description": "Durable USB-C to Lightning cable for fast charging and syncing.",
+  "Specification": [
+      "1-meter length",
+      "Compatible with USB-C power adapters",
+      "Fast charging capability",
+      "Apple-certified cable"
+  ],
+  "availability": true,
+  "rating": 4.5,
+  "warranty": "1 year"
+},
+{
+  "product_id": "AC004",
+  "product_title": "Apple Watch Magnetic Fast Charger to USB-C Cable",
+  "product_image": "https://example.com/images/apple_watch_charger.jpg",
+  "category": "Accessories",
+  "price": 29.99,
+  "description": "Magnetic charger for Apple Watch with fast-charging capability.",
+  "Specification": [
+      "1-meter cable length",
+      "Magnetic attachment",
+      "Compatible with USB-C power adapters",
+      "Fast charging for Apple Watch Series 7 and newer"
+  ],
+  "availability": true,
+  "rating": 4.6,
+  "compatible_devices": ["Apple Watch Series 7", "Apple Watch Series 8", "Apple Watch Ultra"]
+},
+
+{
+  "product_id": "SW001",
+  "product_title": "Apple Watch Series 8",
+  "product_image": "https://example.com/images/apple_watch_series_8.jpg",
+  "category": "Smart Watches",
+  "price": 399.99,
+  "description": "Advanced smartwatch with health monitoring and fitness tracking features.",
+  "Specification": [
+      "41mm or 45mm case size",
+      "Always-On Retina display",
+      "Blood Oxygen and ECG apps",
+      "Crash Detection",
+      "Up to 18 hours of battery life"
+  ],
+  "availability": true,
+  "rating": 4.8,
+  "water_resistance": "50 meters",
+  "color_options": ["Silver", "Graphite", "Gold"]
+},
+{
+  "product_id": "SW002",
+  "product_title": "Samsung Galaxy Watch 5 Pro",
+  "product_image": "https://example.com/images/galaxy_watch_5_pro.jpg",
+  "category": "Smart Watches",
+  "price": 449.99,
+  "description": "Durable smartwatch with advanced tracking and Google Wear OS.",
+  "Specification": [
+      "45mm case size",
+      "AMOLED display",
+      "Up to 80 hours of battery life",
+      "GPS and Body Composition Analysis",
+      "Water and dust resistant"
+  ],
+  "availability": true,
+  "rating": 4.7,
+  "compatible_with": ["Android", "iOS"],
+  "health_features": ["Heart Rate Monitoring", "Sleep Tracking", "SpO2 Monitoring"]
+},
+{
+  "product_id": "SW003",
+  "product_title": "Fitbit Versa 4",
+  "product_image": "https://example.com/images/fitbit_versa_4.jpg",
+  "category": "Smart Watches",
+  "price": 229.99,
+  "description": "Lightweight smartwatch with fitness and sleep tracking capabilities.",
+  "Specification": [
+      "1.58-inch display",
+      "Up to 6+ days of battery life",
+      "24/7 heart rate monitoring",
+      "Built-in GPS",
+      "Water-resistant up to 50 meters"
+  ],
+  "availability": false,
+  "rating": 4.5,
+  "weight": "0.4 lbs",
+  "color": "Black"
+}
+
+
+  ]
+  

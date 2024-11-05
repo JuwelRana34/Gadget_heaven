@@ -4,7 +4,7 @@ import Products from "../Components/Products/Products";
 
 import dataContext from "../datacontext/datacontext";
 import { Link } from "react-router-dom";
-import { DocumentTitle } from "../pages";
+import { DocumentTitle, setLocalDb } from "../pages";
 
 function Home() {
   const [data, setData] = useState([]);
@@ -16,8 +16,8 @@ function Home() {
   useEffect(() => {
     fetch("data.json")
       .then((response) => response.json())
-      .then((data) =>(setData(data), setSelecet(data),setDatas(data)));
-    
+      .then((data) =>(setData(data),setLocalDb(data), setDatas(data)));
+      setSelecet( datas )
   },[]);
 
 
@@ -79,7 +79,7 @@ function Home() {
             </ul>
           </div>
 
-          <div className="bg-green-300  md:w-[75%]  p-5 ">
+          <div className="bg-gray-100 rounded-lg md:w-[75%]  p-5 ">
             <Products data={data} selecet={selecet} />
           </div>
         </div>

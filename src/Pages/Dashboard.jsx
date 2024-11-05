@@ -4,14 +4,16 @@ import { TbSortAscending2 } from "react-icons/tb";
 import ProductList from "../Components/productlist/ProductList";
 import Wishlist from "../Components/wishList/WishList";
 import { DocumentTitle } from "../pages";
+import modalIMG from '../assets/Group.png'
+import { Link } from "react-router-dom";
 
 function Dashboard() {
-  const { AddtoCart, wishlist,setAddtoCart} = useContext(dataContext);
+  const {total , setTotal, AddtoCart, wishlist,setAddtoCart} = useContext(dataContext);
   const [btn, setBtn] = useState(true);
-  const [total, setTotal] = useState("");
+  // const [total, setTotal] = useState(0);
+ DocumentTitle("Dashboard | Gadget Heaven")
 
 
-  DocumentTitle("Dashboard | Gadget Heaven")
 
   const handelbtn = (data) => {
     if (data === "Cart") {
@@ -20,8 +22,6 @@ function Dashboard() {
       setBtn(false);
     }
   };
-
-
 
   const handelPrice = (price) => {
     setTotal(total - price);
@@ -34,11 +34,16 @@ function Dashboard() {
   
   }
 
+  const handelpuces = () => {
+    localStorage.removeItem("AddtoCart");
+    setAddtoCart([]);
+  }
+
   useEffect(() => {
 
     setTotal( AddtoCart.reduce((acc, curr) => acc + curr.price, 0))
 
-  }, [AddtoCart]);
+  }, [AddtoCart , setTotal]);
 
   return (
     <>
@@ -88,7 +93,7 @@ function Dashboard() {
                 <button onClick={handelsort} className="flex gap-1 font-semibold items-center border border-purple-500 text-purple-500 rounded-full text-xs  md:text-base py-1 px-1 md:px-3">
                   Sort by Price <TbSortAscending2 className="text-3xl" />
                 </button>
-                <button className="py-1 px-3 rounded-full font-semibold  bg-gradient-to-l from-[#862eda]  via-[#e45de4] to-[#a33de4] text-white ">
+                <button disabled={total<= 0} onClick={()=>document.getElementById('my_modal_5').showModal()} className={`py-1 px-3 ${total <= 0 ?'disabled:opacity-50 cursor-not-allowed': ''} rounded-full font-semibold  bg-gradient-to-l from-[#862eda]  via-[#e45de4] to-[#a33de4] text-white `}>
                   Purchase
                 </button>
               </>
@@ -111,21 +116,46 @@ function Dashboard() {
               ))
             ) : (
               <h1 className="text-center text-xl font-semibold text-rose-500">
-                {" "}
-                no product added yet!
+                
+                no product added yet in cart !
               </h1>
-            )}{" "}
+            )}
           </>
         ) : (
           <>
             {wishlist.length > 0
-              ? wishlist.map((data, index) => (
-                  <Wishlist key={index} data={data} />
+              ? wishlist.map((data) => (
+                  <Wishlist key={data.product_id} data={data} />
                 ))
-              : " data not found"}
+              : <h1 className="text-center text-xl font-semibold text-rose-500">
+                
+              no product added wishList !
+            </h1>}
           </>
         )}
       </div>
+
+
+{/* modal */}
+{/* Open the modal using document.getElementById('ID').showModal() method */}
+
+<dialog id="my_modal_5" className="modal modal-bottom sm:modal-middle">
+  <div className="modal-box">
+    <img src={modalIMG} className=" mx-auto font-bold text-lg" />
+    <p className="py-4 text-xl text-center font-bold">Payment Successfully</p>
+     <div className="text-center">
+      <p>Thanks for purchasing.</p>
+       <h2>Total: {total}</h2>
+     </div>
+    {/* <div className="modal-action "> */}
+      <form method="dialog ">
+        {/* if there is a button in form, it will close the modal */}
+        <Link to= '/' onClick={handelpuces} className="btn w-full rounded-full my-5 ">Close</Link>
+      </form>
+    {/* </div> */}
+  </div>
+</dialog>
+
     </>
   );
 }

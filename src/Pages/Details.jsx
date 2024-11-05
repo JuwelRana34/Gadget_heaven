@@ -8,15 +8,14 @@ import { toast } from 'keep-react'
 import { DocumentTitle } from "../pages";
 function Details() {
   const { id } = useParams();
-  const { datas ,setDatas, wishlist,setAddtoCart,AddtoCart,setWishlist } = useContext(dataContext);
+  const { total, setTotal, datas , wishlist,setAddtoCart,AddtoCart,setWishlist } = useContext(dataContext);
   const [Details, setDetails] = useState("");
+ const [isDisabled, setIsDisabled] = useState(false)
 
+  useEffect(() => {
+    setTotal(AddtoCart.reduce((acc, curr) => acc + curr.price, 0));
+  }, [AddtoCart, setTotal]);
 
-  useEffect(()=> {
-    fetch("/public/data.json")
-      .then((response) => response.json())
-      .then((data) =>(setDatas(data)));
-  },[setDatas]);
 
   const {
     product_title,
@@ -47,6 +46,7 @@ function Details() {
       if( !wishlist.some(itme => itme.product_id === wishData.product_id)){
         setWishlist([...wishlist, wishData])
         toast.success(`${wishData.product_title}  added to wishlist`)
+        setIsDisabled(true)
       }else{
         toast.warning('already added wishlist')
       }
@@ -56,8 +56,15 @@ function Details() {
         
   }
   const handelAddToCart = (cart)=>{
-    setAddtoCart([...AddtoCart, cart])
+    if(total + cart.price <= 1000){
+       setAddtoCart([...AddtoCart, cart])
     toast.success(`${cart.product_title} added to Cart`)
+    }else{
+       toast.error('Total amount exceeds $1000')
+       return;
+    }
+  
+    
   }
 
 
@@ -109,7 +116,7 @@ function Details() {
               Add to card
               <IoCartOutline className=" text-4xl p-2 " />
             </Link>
-            <button className={` hover:scale-125 transition rounded-full focus:text-green-900  focus:bg-green-100`}>
+            <button disabled={isDisabled} className={` hover:scale-125 transition rounded-full focus:text-green-900 ${isDisabled? "disabled:opacity-50 cursor-not-allowed": ''}  focus:bg-green-100`}>
               <CiHeart onClick={()=>handelWishlist(Details)} className="border  focus:bg-orange-400 rounded-full text-4xl font-bold  p-2 " />
             </button>
           </div>

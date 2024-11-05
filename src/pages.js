@@ -12,6 +12,9 @@ const DocumentTitle = (title)=>{
      document.title = title;
     },[title]);
 }
+const setLocalDb = (data) => {
+  localStorage.setItem('Datas', JSON.stringify(data));
+};
 
-export { Home , Dashboard , Contact ,Statistics, Details,NotFund , DocumentTitle}
+export { Home , Dashboard , Contact ,Statistics, Details,NotFund , DocumentTitle , setLocalDb}
 

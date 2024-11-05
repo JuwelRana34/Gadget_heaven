@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 
 
 function Products({data , selecet}) {
-console.log(data , selecet)
+
 
   return (
     <div className='grid justify-self-center grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5'> 

@@ -11,7 +11,7 @@ function Nav() {
     isActive
       ? "bg-neutral rounded text-base-300"
       : pathname === "/"
-      ? "text-white"
+      ? "md:text-white"
       : "";
 
   return (
@@ -22,7 +22,7 @@ function Nav() {
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-5 w-5"
+                className={`h-5 w-5 ${pathname === '/'?"text-white":''} `}
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
@@ -37,7 +37,7 @@ function Nav() {
             </div>
             <ul
               tabIndex={0}
-              className={` menu menu-sm dropdown-content bg-base-100 rounded-box z-[100] mt-3 w-52 p-2 shadow`}
+              className={` menu menu-sm dropdown-content bg-base-100  rounded-box z-[100] mt-3 w-52 p-2 shadow`}
             >
               <NavLink className={handelActive} to="/">
                 <li>

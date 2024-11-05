@@ -11,8 +11,10 @@ import {
   InputIcon,
   Label,
 } from 'keep-react'
+import { DocumentTitle } from '../pages'
 
 function Contact() {
+  DocumentTitle("Contact | Gadget Heaven")
   return (
     <Card className="max-w-sm mx-auto my-5">
     <CardContent className="space-y-3">

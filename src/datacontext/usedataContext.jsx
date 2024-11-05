@@ -4,6 +4,8 @@ import userContext from "./datacontext";
 // eslint-disable-next-line react/prop-types
 const ContextProvider = ({children})=>{
     const [datas, setDatas] = useState([])
+
+    
     const [wishlist, setWishlist] = useState(()=>{
         const list = localStorage.getItem('wishlist')
         return list? JSON.parse(list) : []

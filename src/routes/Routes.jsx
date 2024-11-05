@@ -1,6 +1,6 @@
 import {createBrowserRouter} from "react-router-dom";
 import App from '../App'
-import{Contact, Dashboard, Details, Home, Statistics } from '../pages'
+import{Contact, Dashboard, Details, Home, NotFund, Statistics } from '../pages'
 
 
     const router = createBrowserRouter([
@@ -28,6 +28,10 @@ import{Contact, Dashboard, Details, Home, Statistics } from '../pages'
                 {
                     path: 'Details/:id',
                     element: <Details />
+                },
+                {
+                    path: '/*',
+                    element: <NotFund />
                 }
             ]
         }

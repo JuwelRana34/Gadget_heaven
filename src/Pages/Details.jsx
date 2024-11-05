@@ -5,6 +5,7 @@ import Rating from "../Components/Rating/Rating";
 import { CiHeart } from "react-icons/ci";
 import { IoCartOutline } from "react-icons/io5";
 import { toast } from 'keep-react'
+import { DocumentTitle } from "../pages";
 function Details() {
   const { id } = useParams();
   const { datas ,setDatas, wishlist,setAddtoCart,AddtoCart,setWishlist } = useContext(dataContext);
@@ -37,15 +38,22 @@ function Details() {
   },[AddtoCart])
 
 
-
+  DocumentTitle("Details | Gadget Heaven")
 
 
 
   const handelWishlist = (wishData)=>{
-
+    
+      if( !wishlist.some(itme => itme.product_id === wishData.product_id)){
         setWishlist([...wishlist, wishData])
-        
         toast.success(`${wishData.product_title}  added to wishlist`)
+      }else{
+        toast.warning('already added wishlist')
+      }
+      
+
+      
+        
   }
   const handelAddToCart = (cart)=>{
     setAddtoCart([...AddtoCart, cart])
@@ -101,8 +109,8 @@ function Details() {
               Add to card
               <IoCartOutline className=" text-4xl p-2 " />
             </Link>
-            <button className=" hover:scale-125 transition rounded-full focus:text-green-900  focus:bg-green-100">
-              <CiHeart onClick={()=>handelWishlist(Details)} className="border focus:bg-orange-400 rounded-full text-4xl font-bold  p-2 " />
+            <button className={` hover:scale-125 transition rounded-full focus:text-green-900  focus:bg-green-100`}>
+              <CiHeart onClick={()=>handelWishlist(Details)} className="border  focus:bg-orange-400 rounded-full text-4xl font-bold  p-2 " />
             </button>
           </div>
         </div>

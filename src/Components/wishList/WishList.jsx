@@ -6,6 +6,8 @@ import { toast } from "keep-react";
 
 
 function Wishlist({data}) {
+ 
+
     const {product_title,
         product_image,
         price,
@@ -36,10 +38,12 @@ const handelAddToCart = (cart)=>{
     console.log(product)
     setAddtoCart([...AddtoCart, product])
 localStorage.setItem('AddtoCart', JSON.stringify([...AddtoCart, product]))
+
     const updateWishList = wishlist.filter(list => list.product_id !== cart)
 
     localStorage.setItem('wishlist', JSON.stringify(updateWishList))
      setWishlist(updateWishList)
+     
     toast.success(`${product.product_title} added to Cart`)
   }
 
@@ -68,7 +72,7 @@ localStorage.setItem('AddtoCart', JSON.stringify([...AddtoCart, product]))
 
           <div>
             <button onClick={()=>handelWishDelete(product_id)}>
-                <HiOutlineX className=" text-red-500 text-4xl border border-red-400 rounded-full p-2 hover:bg-red-100" />
+                <HiOutlineX className={` text-red-500 text-4xl border border-red-400 rounded-full p-2 hover:bg-red-100`} />
             </button>
             
           </div>

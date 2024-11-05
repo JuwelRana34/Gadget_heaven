@@ -3,11 +3,15 @@ import dataContext from "../datacontext/datacontext";
 import { TbSortAscending2 } from "react-icons/tb";
 import ProductList from "../Components/productlist/ProductList";
 import Wishlist from "../Components/wishList/WishList";
+import { DocumentTitle } from "../pages";
 
 function Dashboard() {
   const { AddtoCart, wishlist,setAddtoCart} = useContext(dataContext);
   const [btn, setBtn] = useState(true);
   const [total, setTotal] = useState("");
+
+
+  DocumentTitle("Dashboard | Gadget Heaven")
 
   const handelbtn = (data) => {
     if (data === "Cart") {
@@ -16,6 +20,8 @@ function Dashboard() {
       setBtn(false);
     }
   };
+
+
 
   const handelPrice = (price) => {
     setTotal(total - price);
@@ -29,11 +35,10 @@ function Dashboard() {
   }
 
   useEffect(() => {
-    let total = 0;
-    AddtoCart.map((data) => (total += data.price));
 
-    setTotal(total);
-  }, []);
+    setTotal( AddtoCart.reduce((acc, curr) => acc + curr.price, 0))
+
+  }, [AddtoCart]);
 
   return (
     <>
@@ -83,7 +88,7 @@ function Dashboard() {
                 <button onClick={handelsort} className="flex gap-1 font-semibold items-center border border-purple-500 text-purple-500 rounded-full text-xs  md:text-base py-1 px-1 md:px-3">
                   Sort by Price <TbSortAscending2 className="text-3xl" />
                 </button>
-                <button className="py-1 px-3 rounded-full font-semibold  bg-gradient-to-br from-purple-600 to-orange-500 text-white ">
+                <button className="py-1 px-3 rounded-full font-semibold  bg-gradient-to-l from-[#862eda]  via-[#e45de4] to-[#a33de4] text-white ">
                   Purchase
                 </button>
               </>

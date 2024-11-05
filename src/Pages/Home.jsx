@@ -4,11 +4,14 @@ import Products from "../Components/Products/Products";
 
 import dataContext from "../datacontext/datacontext";
 import { Link } from "react-router-dom";
+import { DocumentTitle } from "../pages";
 
 function Home() {
   const [data, setData] = useState([]);
   const [selecet, setSelecet] = useState([]);
   const {setDatas ,datas} = useContext(dataContext)
+
+  DocumentTitle("Home | Gadget Heaven")
 
   useEffect(() => {
     fetch("data.json")
@@ -17,8 +20,6 @@ function Home() {
     
   },[]);
 
-
-  
 
   const handelProducts = (category = datas) => {
     console.log(datas);
@@ -61,7 +62,7 @@ function Home() {
           Explore Cutting-Edge Gadgets
         </h1>
         <div className=" md:flex gap-10 mt-5">
-          <div className="bg-base-200 md:w-[20%] p-5 rounded-md text-center">
+          <div className="bg-base-200 md:w-[20%] h-fit p-5 rounded-md text-center">
             <ul className="flex flex-col space-y-4   ">
               <button className="bg-white py-2 rounded-full focus:bg-violet-500 focus:text-white" onClick={() => handelProducts("all")}>
                 

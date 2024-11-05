@@ -218,7 +218,7 @@
 {
   "product_id": "IP001",
   "product_title": "iPhone 15 Pro",
-  "product_image": "https://example.com/images/iphone_15_pro.jpg",
+  "product_image": "https://adminapi.applegadgetsbd.com/storage/media/large/iPhone-15-Plus-(2)-(5)-1544.jpg",
   "category": "Phones",
   "price": 1199.99,
   "description": "The latest iPhone with an advanced A17 Bionic chip and stunning ProMotion display.",
@@ -237,7 +237,7 @@
 {
   "product_id": "IP002",
   "product_title": "iPhone 14",
-  "product_image": "https://example.com/images/iphone_14.jpg",
+  "product_image": "https://adminapi.applegadgetsbd.com/storage/media/large/iPhone-14-Blue-7810.jpg",
   "category": "Phones",
   "price": 799.99,
   "description": "A powerful iPhone with great performance and camera features.",
@@ -256,7 +256,7 @@
 {
   "product_id": "IP003",
   "product_title": "iPhone SE (2022)",
-  "product_image": "https://example.com/images/iphone_se_2022.jpg",
+  "product_image": "https://adminapi.applegadgetsbd.com/storage/media/large/5020-27751.jpg",
   "category": "Phones",
   "price": 429.99,
   "description": "Compact iPhone with powerful performance and an affordable price.",
@@ -275,7 +275,7 @@
 {
   "product_id": "MB001",
   "product_title": "MacBook Air 13 M2",
-  "product_image": "https://example.com/images/macbook_air_13_m2.jpg",
+  "product_image": "https://adminapi.applegadgetsbd.com/storage/media/large/MacBook-Air-M2-Midnight-8137.jpg",
   "category": "Computers",
   "price": 1199.99,
   "description": "Lightweight and powerful, with the latest M2 chip for incredible performance.",
@@ -294,7 +294,7 @@
 {
   "product_id": "MB002",
   "product_title": "MacBook Pro 14 M1 Pro",
-  "product_image": "https://example.com/images/macbook_pro_14_m1pro.jpg",
+  "product_image": "https://adminapi.applegadgetsbd.com/storage/media/large/3710-10824.jpg",
   "category": "Computers",
   "price": 1999.99,
   "description": "High-performance MacBook Pro with M1 Pro chip, ideal for professionals.",
@@ -312,7 +312,7 @@
 {
   "product_id": "MB003",
   "product_title": "MacBook Pro 16 M1 Max",
-  "product_image": "https://example.com/images/macbook_pro_16_m1max.jpg",
+  "product_image": "https://adminapi.applegadgetsbd.com/storage/media/large/3715-33244.jpg",
   "category": "Computers",
   "price": 3499.99,
   "description": "Powerful MacBook Pro with M1 Max chip for ultimate performance and graphics.",
@@ -331,7 +331,7 @@
 {
   "product_id": "MB004",
   "product_title": "MacBook Air 15 M2",
-  "product_image": "https://example.com/images/macbook_air_15_m2.jpg",
+  "product_image": "https://adminapi.applegadgetsbd.com/storage/media/large/MacBook-Air-M2-15-inch-8-CPU-10-GPU-Space-Gray-8479.jpg",
   "category": "Computers",
   "price": 1299.99,
   "description": "MacBook Air with a larger display and ultra-thin design, powered by M2 chip.",
@@ -349,7 +349,7 @@
 {
   "product_id": "MB005",
   "product_title": "MacBook Pro 13 M2",
-  "product_image": "https://example.com/images/macbook_pro_13_m2.jpg",
+  "product_image": "https://adminapi.applegadgetsbd.com/storage/media/large/MacBook-Pro-M2-8256GB-13-inch-Space-Gray-a-3035.jpg",
   "category": "Computers",
   "price": 1299.99,
   "description": "Compact MacBook Pro with M2 chip, delivering strong performance in a portable size.",
@@ -367,7 +367,7 @@
 {
   "product_id": "AC001",
   "product_title": "Apple MagSafe Charger",
-  "product_image": "https://example.com/images/magsafe_charger.jpg",
+  "product_image": "https://adminapi.applegadgetsbd.com/storage/media/large/1524-9681.jpg",
   "category": "Accessories",
   "price": 39.99,
   "description": "Effortless wireless charging with MagSafe compatibility for iPhone models.",
@@ -384,7 +384,7 @@
 {
   "product_id": "AC002",
   "product_title": "Apple AirPods Pro (2nd Generation)",
-  "product_image": "https://example.com/images/airpods_pro_2.jpg",
+  "product_image": "https://adminapi.applegadgetsbd.com/storage/media/large/AirPods-Pro-(2nd-generation)-USB%E2%80%90C-a-6909.jpg",
   "category": "Accessories",
   "price": 249.99,
   "description": "High-quality wireless earbuds with noise cancellation and spatial audio.",
@@ -402,7 +402,7 @@
 {
   "product_id": "AC003",
   "product_title": "Apple USB-C to Lightning Cable (1 m)",
-  "product_image": "https://example.com/images/usbc_to_lightning_cable.jpg",
+  "product_image": "https://adminapi.applegadgetsbd.com/storage/media/large/1518-41600.jpg",
   "category": "Accessories",
   "price": 19.99,
   "description": "Durable USB-C to Lightning cable for fast charging and syncing.",
@@ -419,7 +419,7 @@
 {
   "product_id": "AC004",
   "product_title": "Apple Watch Magnetic Fast Charger to USB-C Cable",
-  "product_image": "https://example.com/images/apple_watch_charger.jpg",
+  "product_image": "https://adminapi.applegadgetsbd.com/storage/media/large/2816-84689.jpg",
   "category": "Accessories",
   "price": 29.99,
   "description": "Magnetic charger for Apple Watch with fast-charging capability.",
@@ -437,7 +437,7 @@
 {
   "product_id": "SW001",
   "product_title": "Apple Watch Series 8",
-  "product_image": "https://example.com/images/apple_watch_series_8.jpg",
+  "product_image": "https://adminapi.applegadgetsbd.com/storage/media/large/Starlight-8105.jpg",
   "category": "Smart Watches",
   "price": 399.99,
   "description": "Advanced smartwatch with health monitoring and fitness tracking features.",
@@ -456,7 +456,7 @@
 {
   "product_id": "SW002",
   "product_title": "Samsung Galaxy Watch 5 Pro",
-  "product_image": "https://example.com/images/galaxy_watch_5_pro.jpg",
+  "product_image": "https://brotherselectronicsbd.com/image/cache/catalog/demo/Smart%20Watch/Samsung/Watch%205%20Pro/Galaxy%20Watch5%20Pro%20(2)-600x600.jpg",
   "category": "Smart Watches",
   "price": 449.99,
   "description": "Durable smartwatch with advanced tracking and Google Wear OS.",
@@ -475,7 +475,7 @@
 {
   "product_id": "SW003",
   "product_title": "Fitbit Versa 4",
-  "product_image": "https://example.com/images/fitbit_versa_4.jpg",
+  "product_image": "https://adminapi.applegadgetsbd.com/storage/media/large/Versa-4-Waterfall-Blue-1319.jpg",
   "category": "Smart Watches",
   "price": 229.99,
   "description": "Lightweight smartwatch with fitness and sleep tracking capabilities.",

@@ -8,7 +8,7 @@ import ContextProvider from './datacontext/usedataContext'
 
 function App() {
 const {pathname} = useLocation()
- const paths = ['/','/Statistics','/Dashboard', '/Contact','/Details/:id']
+ const paths = ['/','/Statistics','/Dashboard', '/Contact','/Details/:id' ,"/All-Products",'/Laptops','/Phones','/Accessories','/Iphone','/Smart-Watches']
  const ValidPath = paths.some(path => matchPath({ path, end: true }, pathname));
   return (
     <ContextProvider>

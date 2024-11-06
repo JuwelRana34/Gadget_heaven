@@ -1,4 +1,4 @@
-# Gadget Heaven [[Live Website](https://gadgetheaven-world.netlify.app/)](Live-Website-URL)
+# Gadget Heaven [[Live Website](https://gadgetheaven-world.netlify.app/)]
 
 
 ## Project Overview
@@ -17,13 +17,13 @@ For detailed project requirements, refer to the requirements document: [Requirem
 
 This project following React fundamentals:
 
-1. ** React Router**: this project used router  for navigation other pages without reloading page.
+1. **React Router**: this project used router  for navigation other pages without reloading page.
 2. **Components**: Functional components used to build reusable UI.
 3. **Props**: Data passing between components to make them more dynamic.
 4. **State Management**: Using  `useState` hook to manage component-specific states.
 5. **Effect Hook**: using `useEffect` to handle side effects like  data fetching, specific rendering.
-6. ** use location **
-7. ** use Navigation **.
+6. **use location**
+7. **use Navigation**.
 
 
 ## Data Handling and Management

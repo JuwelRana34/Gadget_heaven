@@ -31,6 +31,7 @@ function Dashboard() {
     const copyarr = [...AddtoCart];
        copyarr.sort((a ,b)=> b.price - a.price)
        setAddtoCart(copyarr)
+       console.log(copyarr)
   
   }
 

@@ -4,14 +4,15 @@ import dataContext from "../datacontext/datacontext";
 import Rating from "../Components/Rating/Rating";
 import { CiHeart } from "react-icons/ci";
 import { IoCartOutline } from "react-icons/io5";
-import { toast } from 'keep-react'
+// import { toast } from 'keep-react'
 import { DocumentTitle } from "../pages";
+import { toast } from 'sonner';
 function Details() {
   const { id } = useParams();
   const { total, setTotal, datas , wishlist,setAddtoCart,AddtoCart,setWishlist } = useContext(dataContext);
   const [Details, setDetails] = useState("");
  const [isDisabled, setIsDisabled] = useState(false)
-
+console.log(isDisabled)
   useEffect(() => {
     setTotal(AddtoCart.reduce((acc, curr) => acc + curr.price, 0));
   }, [AddtoCart, setTotal]);
@@ -46,11 +47,12 @@ function Details() {
       if( !wishlist.some(itme => itme.product_id === wishData.product_id)){
         setWishlist([...wishlist, wishData])
         toast.success(`${wishData.product_title}  added to wishlist`)
-        setIsDisabled(true)
+        
       }else{
-        toast.warning('already added wishlist')
+        
+        toast.warning('already added this in your wishlist')
       }
-      
+      setIsDisabled(true)
 
       
         

@@ -1,7 +1,7 @@
 # Gadget Heaven
 
-[![Live Website](https://gadgetheaven-world.netlify.app/)](Live-Website-URL)
-[![Requirements Document](https://img.shields.io/badge/Requirements-Document-orange)](Requirements-Document-URL)
+[[Live Website](https://gadgetheaven-world.netlify.app/)](Live-Website-URL)
+[[Requirements Document](https://img.shields.io/badge/Requirements-Document-orange)](Requirements-Document-URL)
 
 ## Project Overview
 
@@ -13,7 +13,7 @@ Visit the live website here: [Live Website URL](https://gadgetheaven-world.netli
 
 ## Requirements Document
 
-For detailed project requirements, refer to the requirements document: [Requirements Document Link](Requirements-Document-URL)
+For detailed project requirements, refer to the requirements document: [Requirements Document Link](https://github.com/programming-hero-web-course-4/b10a8-gadget-heaven-JuwelRana34/blob/main/public/Batch-10_Assignment-08.pdf)
 
 ## React Fundamentals Used
 

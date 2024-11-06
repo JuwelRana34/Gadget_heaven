@@ -8,7 +8,7 @@ function Foter() {
  <div className=" text-center mx-auto w-11/12">         
   <aside className="mx-auto text-center space-y-4">
     
-    <h1 className="text-3xl font-bold ">Gadget Heaven</h1>
+    <h1 className="text-3xl font-bold text-gray-600 ">Gadget Heaven</h1>
     <p className="text-base text-justify md:text-center">Transform your tech experience with Gadget Heaven Accessories! Elevate your gadgets with our premium range of accessories. From  phone and cutting-edge chargers to high-performance headphones and laptops, Smart Watches , we&apos;ve got everything you need to accessorize like a pro. Explore our collection to find the perfect companions for your need. Accessorize with Gadget Heaven and take your tech to the next level!</p>
   </aside>
 <hr className=" my-2 bg-red-400 w-full" />

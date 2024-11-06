@@ -12,6 +12,7 @@ function App() {
   return (
     <ContextProvider>
    <div >
+
    <Nav/>
    <div className='min-h-[calc(100vh-24rem)]'>
     <Outlet/>

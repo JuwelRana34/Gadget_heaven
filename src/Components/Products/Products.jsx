@@ -48,25 +48,26 @@ useEffect(() => {
 
 
   return (
-    <div className='grid justify-self-center grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5'> 
+    <div className='grid justify-self-center grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 '> 
 
 
     { products.map(
         (data ) => 
           
-            <Card key={data.product_id} className='p-4 '>
+            <Card key={data.product_id} className='p-4 flex flex-col  '>
         <CardHeader>
           <img src={data.product_image} className="rounded-t-xl hover:scale-110 transition w-full h-[250px]  origin-center" alt="image"  />
         </CardHeader>
-        <CardContent className="space-y-3">
-          <CardTitle>{data.product_title}</CardTitle>
-          <CardDescription className='py-3'>
+
+        <CardContent className="space-y-1 flex-grow ">
+          <CardTitle >{data.product_title}</CardTitle>
+          <CardDescription className='py-3 font-semibold '>
           Price:$ {data.price}
 
           </CardDescription>
-
-          <Link to={`/Details/${data.product_id}`} > <Button className='border-2 rounded-full  text-violet-500  border-violet-500'>View Details</Button></Link>
+  
         </CardContent>
+        <Link  to={`/Details/${data.product_id}`} > <Button className='border-2 rounded-full m-6   text-violet-500  border-violet-500'>View Details</Button></Link>
       </Card>
         )}
 

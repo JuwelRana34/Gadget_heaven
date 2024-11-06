@@ -1,32 +1,41 @@
 import { useContext, useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import dataContext from "../datacontext/datacontext";
-import Rating from "../Components/Rating/Rating";
 import { CiHeart } from "react-icons/ci";
 import { IoCartOutline } from "react-icons/io5";
-// import { toast } from 'keep-react'
-import { DocumentTitle } from "../pages";
+import { DocumentTitle} from "../pages";
 import { toast } from 'sonner';
+import ReactStars from "react-rating-stars-component";
+
+
+
 function Details() {
   const { id } = useParams();
   const { total, setTotal, datas , wishlist,setAddtoCart,AddtoCart,setWishlist } = useContext(dataContext);
   const [Details, setDetails] = useState("");
  const [isDisabled, setIsDisabled] = useState(false)
-console.log(isDisabled)
+
+ const {
+  product_title,
+  product_image,
+  price,
+  availability,
+  Specification,
+  description,
+  rating,
+} = Details;
+
+
+const firstExample = {
+  size: 30,
+  value: 4.5,
+  edit: false,
+  isHalf: true,
+};
+
   useEffect(() => {
     setTotal(AddtoCart.reduce((acc, curr) => acc + curr.price, 0));
   }, [AddtoCart, setTotal]);
-
-
-  const {
-    product_title,
-    product_image,
-    price,
-    availability,
-    Specification,
-    description,
-    rating,
-  } = Details;
 
 
   useEffect(() => {
@@ -37,9 +46,7 @@ console.log(isDisabled)
     localStorage.setItem('AddtoCart', JSON.stringify(AddtoCart))
   },[AddtoCart])
 
-
   DocumentTitle("Details | Gadget Heaven")
-
 
 
   const handelWishlist = (wishData)=>{
@@ -104,12 +111,14 @@ console.log(isDisabled)
             }
             </div>
           <h1 className=" text-xl font-semibold"> Rating:</h1> 
-            <div className=" space-x-3">
-              <Rating rating={rating}></Rating>
-            <span className="py-1 px-3 rounded-full bg-slate-200">
+            <div className=" flex items-center space-x-3">
+      
+            <ReactStars {...firstExample} />
+
+            <span className="py-1 px-3 rounded-full bg-slate-200">{rating}</span>
              
-            {rating}
-            </span>
+            
+            
             </div>
             
           

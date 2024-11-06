@@ -28,7 +28,19 @@ const {datas} = useContext(dataContext)
   } 
 
   return (
-    <ChartContainer config={chartConfig} className="h-[70vh] w-10/12 mx-auto">
+    <>
+    <div className=" text-center container mx-auto bg-[#9538e2] py-5 text-white">
+        <div className=" md:w-1/2 p-2 mx-auto">
+          <h1 className="text-3xl font-bold p-2">Statistics</h1>
+          <p>
+           here is the  statistics about Product price  and product name you can see it visually below.
+          </p>
+          
+        </div>
+      </div>
+      
+    <ChartContainer config={chartConfig} className=" mb-20 h-[70vh] w-10/12 mx-auto">
+    <h1 className="text-2xl text-gray-700 my-5 font-bold ">Statistics</h1>
       <BarChart accessibilityLayer data={datas}>
         <CartesianGrid vertical={false} />
         <XAxis
@@ -45,6 +57,8 @@ const {datas} = useContext(dataContext)
         <Bar dataKey="category" radius={[8, 8, 0, 0]} fill="#11A75C" />
       </BarChart>
     </ChartContainer>
+    </>
+    
   )
 }
 

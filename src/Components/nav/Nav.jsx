@@ -7,22 +7,22 @@ function Nav() {
   const { pathname } = useLocation();
   const { wishlist, AddtoCart } = useContext(dataContext);
 
-  const handelActive = ({ isActive }) =>
+  const handelActive = ({ isActive }) =>(
     isActive
       ? "bg-neutral rounded text-base-300"
-      : pathname === "/"
+      : pathname === "/" || pathname === '/All-Products' || pathname === '/Laptops' || pathname === '/Phones' || pathname === '/Accessories' || pathname === '/Smart-Watches' || pathname === '/Iphone'
       ? "md:text-white"
-      : "";
+      : "")
 
   return (
-    <div className="">
+    <div className=" mt-4">
       <div className="navbar container mx-auto ">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className={`h-5 w-5 ${pathname === '/'?"text-white":''} `}
+                className={`h-5 w-5 ${pathname === "/" || pathname === '/All-Products' || pathname === '/Laptops' || pathname === '/Phones' || pathname === '/Accessories' || pathname === '/Smart-Watches' || pathname === '/Iphone'?"text-white":''} `}
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
@@ -63,7 +63,7 @@ function Nav() {
           </div>
           <Link to="/"
             className={`btn btn-ghost text-xl ${
-              pathname === "/" ? "text-white" : ""
+              pathname === "/" || pathname === '/All-Products' || pathname === '/Laptops' || pathname === '/Phones' || pathname === '/Accessories' || pathname === '/Smart-Watches' || pathname === '/Iphone' ? "text-white" : ""
             }`}
           >
             Gadget Heaven

@@ -5,12 +5,12 @@ import ProductList from "../Components/productlist/ProductList";
 import Wishlist from "../Components/wishList/WishList";
 import { DocumentTitle } from "../pages";
 import modalIMG from '../assets/Group.png'
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 function Dashboard() {
   const {total , setTotal, AddtoCart, wishlist,setAddtoCart} = useContext(dataContext);
   const [btn, setBtn] = useState(true);
-  // const [total, setTotal] = useState(0);
+ const navigate = useNavigate()
  DocumentTitle("Dashboard | Gadget Heaven")
 
 
@@ -37,6 +37,7 @@ function Dashboard() {
   const handelpuces = () => {
     localStorage.removeItem("AddtoCart");
     setAddtoCart([]);
+    navigate('/')
   }
 
   useEffect(() => {
@@ -47,13 +48,11 @@ function Dashboard() {
 
   return (
     <>
-      <div className=" text-center bg-[#9538e2] text-white">
+      <div className=" text-center container mx-auto bg-[#9538e2] text-white">
         <div className=" md:w-1/2 p-2 mx-auto">
           <h1 className="text-3xl font-bold p-2">Dashboard</h1>
           <p>
-            Explore the latest gadgets that will take your experience to the
-            next level. From smart devices to the coolest accessories, we have
-            it all!
+            Explore your dashboard with cart and wishList option you can purchase and sort your products by price and see your toatl price also delete product from cart.
           </p>
           <div className="flex gap-4 items-center justify-center py-5">
             <button
@@ -88,7 +87,7 @@ function Dashboard() {
             {btn ? (
               <>
                 <h1 className=" text-sm md:text-xl text-center font-bold ">
-                  Price: { parseFloat(total).toFixed(2) }
+                Total cost: { parseFloat(total).toFixed(2) }
                 </h1>
                 <button onClick={handelsort} className="flex gap-1 font-semibold items-center border border-purple-500 text-purple-500 rounded-full text-xs  md:text-base py-1 px-1 md:px-3">
                   Sort by Price <TbSortAscending2 className="text-3xl" />
@@ -150,7 +149,7 @@ function Dashboard() {
     {/* <div className="modal-action "> */}
       <form method="dialog ">
         {/* if there is a button in form, it will close the modal */}
-        <Link to= '/' onClick={handelpuces} className="btn w-full rounded-full my-5 ">Close</Link>
+        <button to= '/' onClick={handelpuces} className="btn w-full rounded-full my-5 ">Close</button>
       </form>
     {/* </div> */}
   </div>

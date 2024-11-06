@@ -3,13 +3,13 @@
 function Foter() {
   return (
     <div className="">
-        <footer className="footer  text-base-content p-10">
+        <footer className="footer  text-base-content pt-8 md:p-10">
 
  <div className=" text-center mx-auto w-11/12">         
   <aside className="mx-auto text-center space-y-4">
     
     <h1 className="text-3xl font-bold ">Gadget Heaven</h1>
-    <p className="text-base">Leading the way in cutting-edge technology and innovation.</p>
+    <p className="text-base text-justify md:text-center">Transform your tech experience with Gadget Heaven Accessories! Elevate your gadgets with our premium range of accessories. From  phone and cutting-edge chargers to high-performance headphones and laptops, Smart Watches , we&apos;ve got everything you need to accessorize like a pro. Explore our collection to find the perfect companions for your need. Accessorize with Gadget Heaven and take your tech to the next level!</p>
   </aside>
 <hr className=" my-2 bg-red-400 w-full" />
 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-10 md:gap-48 pt-10 mx-auto">

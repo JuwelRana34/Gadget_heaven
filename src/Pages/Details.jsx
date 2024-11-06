@@ -75,9 +75,9 @@ function Details() {
  
   return (
     <div className=" relative  lg:bg-slate-100 z-20 py-10">
-      <div className=" absolute  top-0  w-full -z-10  bg-[#9538e2] h-[80vh] md:h-[40vh]"></div>
+      <div className=" absolute rounded-b left-1/2  -translate-x-1/2  top-0  w-full -z-10 container mx-auto  bg-[#9538e2] h-[80vh] md:h-[40vh]"></div>
 
-      <div className="text-white text-center space-y-4 pt-4 w-1/2 mx-auto">
+      <div className="text-white text-center space-y-4 pt-4 px-2 md:w-1/2 mx-auto">
         <h1 className="text-2xl font-bold ">Product Details</h1>
         <p>
           Explore the latest gadgets that will take your experience to the next
@@ -85,14 +85,14 @@ function Details() {
         </p>
       </div>
 
-      <div className=" md:w-[80%] mx-auto  md:flex gap-5 bg-white p-5 border rounded-2xl mt-5">
-        <div className="bg-base-200 p-5 rounded-lg">
-          <img className="rounded-lg" src={product_image} alt="" />
+      <div className=" md:w-[80%] mx-auto shadow  md:flex gap-5 bg-white p-5 border rounded-2xl mt-5">
+        <div className="bg-base-200 h-fit p-5 rounded-lg">
+          <img className="rounded-lg md:w-60" src={product_image} alt="" />
         </div>
         <div className=" space-y-3">
           <h1 className=" text-2xl font-bold">{product_title}</h1>
           <h2 className=" font-semibold text-slate-500">price:${price} </h2>
-          <button className="py-2 rounded-full px-4 font-semibold bg-[#eaf5e6] border-[#2f9c08e4] text-[#2f9c08e4]">
+          <button className={` ${availability? 'bg-[#eaf5e6]  border-[#2f9c08e4] text-[#2f9c08e4]': 'bg-red-100 border-red-500 text-red-500'} py-2 rounded-full px-4 font-semibold border`}>
             {availability ? "In Stock" : "Out of Stock"}
           </button>
           <p>{description}</p>
@@ -101,13 +101,16 @@ function Details() {
 
             }
             </div>
-          <h1 className="flex  items-center space-x-3">
-            Rating: <Rating rating={rating}></Rating>
+          <h1 className=" text-xl font-semibold"> Rating:</h1> 
+            <div className=" space-x-3">
+              <Rating rating={rating}></Rating>
             <span className="py-1 px-3 rounded-full bg-slate-200">
-              {" "}
-              {rating}
+             
+            {rating}
             </span>
-          </h1>
+            </div>
+            
+          
           <div className="flex gap-5 items-center ">
             <Link
               className="py-2 px-3 bg-[#8d36d6] flex items-center justify-center rounded-full text-white font-semibold"

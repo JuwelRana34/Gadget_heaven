@@ -7,6 +7,8 @@ import Details from './Pages/Details';
 import NotFund from './Pages/NotFund';
 import { useEffect } from 'react';
 
+
+
 const DocumentTitle = (title)=>{
     useEffect(()=>{
      document.title = title;
@@ -16,5 +18,10 @@ const setLocalDb = (data) => {
   localStorage.setItem('Datas', JSON.stringify(data));
 };
 
-export { Home , Dashboard , Contact ,Statistics, Details,NotFund , DocumentTitle , setLocalDb}
+const CategoryLoadFun = (category) => {
+         return category
+         
+}
+
+export { Home , Dashboard , Contact ,Statistics, Details,NotFund , DocumentTitle , setLocalDb, CategoryLoadFun}
 

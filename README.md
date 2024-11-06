@@ -1,8 +1,43 @@
-# React + Vite
+# Gadget Heaven
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[![Live Website](https://gadgetheaven-world.netlify.app/)](Live-Website-URL)
+[![Requirements Document](https://img.shields.io/badge/Requirements-Document-orange)](Requirements-Document-URL)
 
-Currently, two official plugins are available:
+## Project Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Transform your tech experience with Gadget Heaven Accessories! Elevate your gadgets with our premium range of accessories. From  phone and cutting-edge chargers to high-performance headphones and laptops, Smart Watches , we've got everything you need to accessorize like a pro. Explore our collection to find the perfect companions for your need. Accessorize with Gadget Heaven and take your tech to the next level!
+
+## Live Website
+
+Visit the live website here: [Live Website URL](https://gadgetheaven-world.netlify.app/)
+
+## Requirements Document
+
+For detailed project requirements, refer to the requirements document: [Requirements Document Link](Requirements-Document-URL)
+
+## React Fundamentals Used
+
+This project following React fundamentals:
+
+1. **Router**: this project used router  for navigation other pages without reloading page.
+2. **Components**: Functional components used to build reusable UI.
+3. **Props**: Data passing between components to make them more dynamic.
+4. **State Management**: Using  `useState` hook to manage component-specific states.
+5. **Effect Hook**: using `useEffect` to handle side effects like  data fetching, specific rendering.
+
+## Data Handling and Management
+
+For handling and managing data across the application:
+
+- **Context API**: Used for global state management to handle and provide data to multiple components across the app.
+- **Local Storage**: this is used for all data load in home page and cart and wishlist to store data.
+
+## Key Features
+
+1. **Add Product to cart**: Users can add product to cart for buy.
+2. **Add Product to wishlist**: user can Add product their wishlist and buy from that wishlist by click on add to cart button.
+3. **Sort by Price**: if need to sort cart product they can do this and it will be sort from high to low price and by sort will be based on product price .
+4. **Purchase product**: after click Purchase btn user get popup and when Purchase done cart will be empty.
+5. **Category based filter**: in the website have many Category user can filter their product by Category like all-product, laptop , phone etc.
+
+
